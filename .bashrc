@@ -21,6 +21,9 @@ alias rebashrc='source ~/.bashrc'
 alias vimrc='vim ~/.vimrc'
 #alias revimrc='not sure how to do this actually'
 
+# .tmux.conf family
+alias muxconf='vim ~/.tmux.conf'
+#alias remuxconf='not sure how to do this actually'
 
 
 ### COLOR SETTINGS ###
