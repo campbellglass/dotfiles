@@ -32,7 +32,7 @@ alias vimrc='vim ~/.vimrc'
 
 # .tmux.conf family
 alias muxconf='vim ~/.tmux.conf'
-#alias remuxconf='not sure how to do this actually'
+alias remuxconf='tmux source-file ~/.tmux.conf'
 
 
 ### COLOR SETTINGS ###
