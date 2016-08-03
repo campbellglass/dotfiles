@@ -14,8 +14,12 @@ alias attachmux='tmux attach -t'
 alias listmux='tmux list-sessions'
 
 # .bashrc family
-alias vimbashrc='vim ~/.bashrc'
+alias bashrc='vim ~/.bashrc'
 alias rebashrc='source ~/.bashrc'
+
+# .vimrc family
+alias vimrc='vim ~/.vimrc'
+#alias revimrc='not sure how to do this actually'
 
 
 
