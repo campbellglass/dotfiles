@@ -12,6 +12,15 @@ alias la='ls -a --color=auto'
 alias newmux='tmux new-session -s'
 alias attachmux='tmux attach -t'
 alias listmux='tmux list-sessions'
+alias movemux='tmux move-window -t'
+shiftmux () { tmux move-window -s $1 -t $2; }
+swapmux () { # Swaps window numbering of two args in tmux
+  SWAP_WINDOW=100;
+  shiftmux $1 $SWAP_WINDOW;
+  shiftmux $2 $1;
+  shiftmux $SWAP_WINDOW $2;
+  unset SWAP_WINDOW;
+}
 
 # .bashrc family
 alias bashrc='vim ~/.bashrc'
