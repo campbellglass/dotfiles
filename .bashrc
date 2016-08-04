@@ -11,6 +11,7 @@ alias la='ls -a --color=auto'
 # tmux family
 alias newmux='tmux new-session -s'
 alias attachmux='tmux attach -t'
+alias detachmux='tmux detach'
 alias listmux='tmux list-sessions'
 alias movemux='tmux move-window -t'
 shiftmux () { tmux move-window -s $1 -t $2; }
