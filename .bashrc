@@ -48,3 +48,11 @@ else
         export TERM='xterm-color'
 fi
 
+
+### RUN OTHER SCRIPTS ###
+if [ -e /home/ctmg/.bash_profile ]; then
+	#TODO: standardize the bash profile finding
+	echo "Found a .bash_profile, running it"
+	source /home/ctmg/.bash_profile
+fi
+
