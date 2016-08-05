@@ -23,6 +23,10 @@ swapmux () { # Swaps window numbering of two args in tmux
   unset SWAP_WINDOW;
 }
 
+# .bash_profile family
+alias bashprofile='vim ~/.bash_profile'
+alias rebashprofile='source ~/.bash_profile'
+
 # .bashrc family
 alias bashrc='vim ~/.bashrc'
 alias rebashrc='source ~/.bashrc'
