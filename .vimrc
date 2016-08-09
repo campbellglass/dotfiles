@@ -11,6 +11,9 @@ endif
 " Plug Setup
 call plug#begin('~/.vim/plugged')
 
+" Go support in vim
+Plug 'fatih/vim-go'
+
 " Plug Setup End
 call plug#end()
 
