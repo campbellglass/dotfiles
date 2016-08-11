@@ -40,6 +40,10 @@ alias muxconf='vim ~/.tmux.conf'
 alias remuxconf='tmux source-file ~/.tmux.conf'
 
 
+# Go setup
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+export GOPATH=$HOME/extrahop/depot/extrahop/go:$HOME/extrahop/depot/vendor/golibs:$HOME/go
+
 ### COLOR SETTINGS ###
 # Colorize and customize the PS1
 # from: http://bashrcgenerator.com/

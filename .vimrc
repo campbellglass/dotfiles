@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
 
 " Go support in vim
 Plug 'fatih/vim-go'
+au FileType go nmap <Leader>gd <Plug>(go-def-vertical)
 
 " Plug Setup End
 call plug#end()
