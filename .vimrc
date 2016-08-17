@@ -15,6 +15,8 @@ call plug#begin('~/.vim/plugged')
 " Go support in vim
 Plug 'fatih/vim-go'
 au FileType go nmap <Leader>gd <Plug>(go-def-vertical)
+command Nogofmt let g:go_fmt_autosave = 0
+command Yesgofmt let g:go_fmt_autosave = 1
 
 " Ctrl-p Fuzzy File Matching
 " Mostly cut/paste from github.com/tgrosinger/dotfiles
