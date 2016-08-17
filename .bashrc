@@ -47,7 +47,7 @@ export GOPATH=$HOME/extrahop/depot/extrahop/go:$HOME/extrahop/depot/vendor/golib
 ### COLOR SETTINGS ###
 # Colorize and customize the PS1
 # from: http://bashrcgenerator.com/
-export PS1="[\[$(tput sgr0)\]\[\033[38;5;183m\]\t\[$(tput sgr0)\]\[\033[38;5;15m\]]\[$(tput sgr0)\]\[\033[38;5;178m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;201m\]\H\[$(tput sgr0)\]\[\033[38;5;15m\]:[\[$(tput sgr0)\]\[\033[38;5;10m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]]>\[$(tput sgr0)\]"
+export PS1="[\[$(tput sgr0)\]\[\033[38;5;183m\]\t\[$(tput sgr0)\]\[\033[38;5;15m\]]\[$(tput sgr0)\]\[\033[38;5;178m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;201m\]\H\[$(tput sgr0)\]\[\033[38;5;15m\]:[\[$(tput sgr0)\]\[\033[38;5;10m\]\w\[$(tput sgr0)\]]\[\033[38;5;15m\]]>\[$(tput sgr0)\]"
 
 # Set terminal to 256 color mode?
 # from: http://vim.wikia.com/wiki/256_colors_in_vim
