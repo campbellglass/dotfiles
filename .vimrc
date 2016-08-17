@@ -1,4 +1,5 @@
 " Copyright Campbell Glass 2016 or whatever
+" For further reference, see github.com/tgrosinger/dotfiles
 
 "** Plug Package Manager Section ***
 " Obtained from https://github.com/junegunn/vim-plug
@@ -14,6 +15,18 @@ call plug#begin('~/.vim/plugged')
 " Go support in vim
 Plug 'fatih/vim-go'
 au FileType go nmap <Leader>gd <Plug>(go-def-vertical)
+
+" Ctrl-p Fuzzy File Matching
+" Mostly cut/paste from github.com/tgrosinger/dotfiles
+Plug 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_user_command = {
+    \ 'types': {
+        \ 1: ['.git', 'cd %s && git ls-files . -co --exclude-standard'],
+        \ },
+    \ 'fallback': 'find %s -type f'
+    \ }
 
 " Plug Setup End
 call plug#end()
