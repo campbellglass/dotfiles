@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
 " Go support in vim
 Plug 'fatih/vim-go'
 au FileType go nmap <Leader>gd <Plug>(go-def-vertical)
+
 command Nogofmt let g:go_fmt_autosave = 0
 command Yesgofmt let g:go_fmt_autosave = 1
 
@@ -46,4 +47,9 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+"* Leader things
+set wildmenu                    " Show a menu rather than auto-completing
+let mapleader = ","
+let g:mapleader = ","
 
