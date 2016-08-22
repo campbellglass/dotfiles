@@ -3,6 +3,10 @@
 
 echo 'Running .bashrc'
 
+### GENERAL SETTINGS ###
+# Default Editor
+export EDITOR='vim'
+
 ### USEFUL ALIASES ###
 # ls family
 alias ls='ls --color=auto'
