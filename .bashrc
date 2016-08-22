@@ -7,6 +7,9 @@ echo 'Running .bashrc'
 # Default Editor
 export EDITOR='vim'
 
+# Path modification
+export PATH=$PATH:/usr/local/bin
+
 ### USEFUL ALIASES ###
 # ls family
 alias ls='ls --color=auto'
