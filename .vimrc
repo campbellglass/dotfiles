@@ -53,3 +53,14 @@ set wildmenu                    " Show a menu rather than auto-completing
 let mapleader = ","
 let g:mapleader = ","
 
+"** Splits
+"* Navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+"* Split opening
+set splitbelow
+set splitright
+
