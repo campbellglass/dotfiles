@@ -30,6 +30,9 @@ swapmux () { # Swaps window numbering of two args in tmux
   unset SWAP_WINDOW;
 }
 
+# .dotfiles family
+alias dotfiles='cd ~/.dotfiles'
+
 # .bash_profile family
 alias bashprofile='vim ~/.bash_profile'
 alias rebashprofile='source ~/.bash_profile'
