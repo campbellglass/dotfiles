@@ -31,6 +31,9 @@ let g:ctrlp_user_command = {
     \ 'fallback': 'find %s -type f'
     \ }
 
+" Tmux navigation integration
+Plug 'christoomey/vim-tmux-navigator'
+
 " Plug Setup End
 call plug#end()
 
@@ -63,4 +66,10 @@ nnoremap <C-H> <C-W><C-H>
 "* Split opening
 set splitbelow
 set splitright
+
+"* Tmux navigation integration
+nnoremap <silent> <C-Left> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-Down> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-Up> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-Right> :TmuxNavigateRight<cr>
 
