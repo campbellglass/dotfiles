@@ -49,7 +49,6 @@ alias vimrc='vim ~/.vimrc'
 alias muxconf='vim ~/.tmux.conf'
 alias remuxconf='tmux source-file ~/.tmux.conf'
 
-
 # Go setup
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export GOPATH=$HOME/extrahop/depot/extrahop/go:$HOME/extrahop/depot/vendor/golibs:$HOME/go
@@ -71,3 +70,25 @@ if [ -f ~/.bashrc.local ];
 then
     source ~/.bashrc.local
 fi
+
+### VOLUME SETTINGS ###
+# Open sound mixer application
+alias mixer='alsamixer'
+# Increase by 2%
+alias louder='amixer -q sset Master 2%+'
+# Increase by 2% $1 times
+louderx () {
+    for i in `seq 1 $1`;
+    do
+        louder
+    done
+}
+# Decrease by 2% $1 times
+alias quieter='amixer -q sset Master 2%-'
+quieterx () {
+    for i in `seq 1 $1`;
+    do
+        quieter
+    done
+}
+
