@@ -49,6 +49,10 @@ alias vimrc='vim ~/.vimrc'
 alias muxconf='vim ~/.tmux.conf'
 alias remuxconf='tmux source-file ~/.tmux.conf'
 
+# Screenshot utilities
+alias before='gnome-screenshot -w -d 1 -f /home/ctmg/Pictures/before.png'
+alias after='gnome-screenshot -w -d 1 -f /home/ctmg/Pictures/after.png'
+
 # Go setup
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export GOPATH=$HOME/extrahop/depot/extrahop/go:$HOME/extrahop/depot/vendor/golibs:$HOME/go
