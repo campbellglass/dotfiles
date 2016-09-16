@@ -73,3 +73,8 @@ nnoremap <silent> <C-Down> :TmuxNavigateDown<cr>
 nnoremap <silent> <C-Up> :TmuxNavigateUp<cr>
 nnoremap <silent> <C-Right> :TmuxNavigateRight<cr>
 
+"* Colors
+syntax enable
+set background=dark
+"colorscheme solarized
+
