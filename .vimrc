@@ -16,8 +16,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go'
 au FileType go nmap <Leader>gd <Plug>(go-def-vertical)
 
-command Nogofmt let g:go_fmt_autosave = 0
-command Yesgofmt let g:go_fmt_autosave = 1
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'varcheck', 'ineffassign']
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'varcheck', 'aligncheck', 'ineffassign']
 
 " Ctrl-p Fuzzy File Matching
 " Mostly cut/paste from github.com/tgrosinger/dotfiles
@@ -33,6 +34,10 @@ let g:ctrlp_user_command = {
 
 " Tmux navigation integration
 Plug 'christoomey/vim-tmux-navigator'
+nnoremap <silent> <C-Left> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-Down> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-Up> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-Right> :TmuxNavigateRight<cr>
 
 " Plug Setup End
 call plug#end()
@@ -57,21 +62,9 @@ let mapleader = ","
 let g:mapleader = ","
 
 "** Splits
-"* Navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
 "* Split opening
 set splitbelow
 set splitright
-
-"* Tmux navigation integration
-nnoremap <silent> <C-Left> :TmuxNavigateLeft<cr>
-nnoremap <silent> <C-Down> :TmuxNavigateDown<cr>
-nnoremap <silent> <C-Up> :TmuxNavigateUp<cr>
-nnoremap <silent> <C-Right> :TmuxNavigateRight<cr>
 
 "* Colors
 syntax enable
