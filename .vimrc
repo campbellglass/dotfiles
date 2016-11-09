@@ -71,3 +71,14 @@ syntax enable
 set background=dark
 "colorscheme solarized
 
+"* Line length
+highlight ColorColumn ctermbg=0 guibg=#eee8d5
+set textwidth=80
+set colorcolumn=+1
+
+"* Appearance
+set number                      " Turn on line numbers
+set ruler                       " Turn on line, column counter
+set nowrap
+
+
