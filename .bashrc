@@ -15,6 +15,11 @@ export PATH=$PATH:/usr/local/bin
 alias ls='ls --color=auto'
 alias la='ls -a --color=auto'
 
+# renames terminal window. Useful for tmux/i3
+renameterminal () {
+  echo -e "\e]0;$1\a"
+}
+
 # tmux family
 alias newmux='tmux new-session -s'
 alias attachmux='tmux attach -t'
