@@ -58,6 +58,11 @@ alias remuxconf='tmux source-file ~/.tmux.conf'
 alias before='gnome-screenshot -w -d 1 -f /home/ctmg/Pictures/before.png'
 alias after='gnome-screenshot -w -d 1 -f /home/ctmg/Pictures/after.png'
 
+# Diff utilities
+mydiff () {
+    diff -W $(tput cols) -y --ignore-all-space $1 $2 | less
+}
+
 # Go setup
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export GOPATH=$HOME/extrahop/depot/extrahop/go:$HOME/extrahop/depot/vendor/golibs:$HOME/go
