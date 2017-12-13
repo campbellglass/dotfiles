@@ -39,6 +39,22 @@ nnoremap <silent> <C-Down> :TmuxNavigateDown<cr>
 nnoremap <silent> <C-Up> :TmuxNavigateUp<cr>
 nnoremap <silent> <C-Right> :TmuxNavigateRight<cr>
 
+" Syntastic
+Plug 'vim-syntastic/syntastic'
+" Suggested default settings
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+
+" ShellCheck using Syntastic
+" let g:syntastic_sh_checkers = ['syntastic-sh-shellcheck']
+let g:syntastic_sh_checkers = []
+
 " Plug Setup End
 call plug#end()
 
@@ -69,7 +85,9 @@ set splitright
 "* Colors
 syntax enable
 set background=dark
-"colorscheme solarized
+colorscheme solarized
+highlight Normal ctermbg=None
+
 
 "* Line length
 highlight ColorColumn ctermbg=0 guibg=#eee8d5
@@ -81,4 +99,10 @@ set number                      " Turn on line numbers
 set ruler                       " Turn on line, column counter
 set nowrap
 
+if has ('autocmd') " Remain compatible with earlier versions
+ augroup vimrc     " Source vim configuration upon save
+    autocmd! BufWritePost $MYVIMRC source % | echom "Reloaded " . $MYVIMRC | redraw
+    autocmd! BufWritePost $MYGVIMRC if has('gui_running') | so % | echom "Reloaded " . $MYGVIMRC | endif | redraw
+  augroup END
+endif " has autocmd
 
