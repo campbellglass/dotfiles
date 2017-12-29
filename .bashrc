@@ -20,6 +20,8 @@ export EDITOR='vim'
 
 # Path modification
 export PATH=$PATH:/usr/local/bin
+CUSTOM_BIN_PATH="$HOME/.dotfiles/bin"
+export PATH=$PATH:CUSTOM_BIN_PATH
 
 # History Size
 HISTSIZE=5000

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+#
+# --------------------------------------------------------
+# Usage
+# --------------------------------------------------------
+#
+# git command-template
+#
+# --------------------------------------------------------
+# Summary
+# --------------------------------------------------------
+#
+# This is a template for making future custom git commands.
+#
+# Author: Campbell Glass
+#
+
+echo "This is a template for making custom git commands"
