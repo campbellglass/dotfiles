@@ -27,6 +27,20 @@ if [[ ":${PATH}:" != *":${CUSTOM_BIN_PATH}:"* ]]; then
     export PATH=${PATH}:${CUSTOM_BIN_PATH}
 fi
 
+# Git autocomplete support
+# File from
+# https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+
+refresh_git () {
+    if [ -f ~/git-completion.bash ]; then
+        source ~/git-completion.bash
+    else
+        echo "Missing expected git-completion.bash file"
+    fi
+}
+
+refresh_git
+
 # History Size
 HISTSIZE=5000
 HISTFILESIZE=10000
