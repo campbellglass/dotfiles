@@ -12,3 +12,5 @@ ln -fns /home/ctmg/.dotfiles/.vimrc /home/ctmg/.vimrc
 echo "Linking .tmux.conf"
 ln -fns /home/ctmg/.dotfiles/.tmux.conf /home/ctmg/.tmux.conf
 
+# tmux custom scripts stuff
+/home/ctmg/.dotfiles/bin/tmux/install.sh
