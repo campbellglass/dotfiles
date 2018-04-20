@@ -61,7 +61,7 @@ call plug#end()
 
 "** Vim Settings Section **"
 " Set directory for vim swap files
-:set directory=$HOME/.vim/swapfiles//
+:set directory=$HOME/.vim/swapfiles/
 
 "* Indentation
 filetype plugin indent on

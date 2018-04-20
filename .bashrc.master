@@ -1,0 +1,30 @@
+#!/bin/bash
+
+BASHRC_LOCAL=".bashrc.local"
+BASHRC_MISC="$.bashrc.misc"
+BASHRC_DEFAULT=".bashrc.default"
+
+HOME_BASHRC_FILES=( "${BASHRC_MISC}" "${BASHRC_LOCAL}" "${BASHRC_DEFAULT}")
+
+
+src_bash () {
+    if [ "$#" -ne 1 ]; then
+        echo "Error: Usage $0 <BASHRC_FILENAME>"
+	return 1
+    fi
+
+    bashrc_file=$1
+
+    echo "Looking for '${bashrc_file}'"
+    if [ -f "${bashrc_file}" ]; then
+        echo "Found '${bashrc_file}'"
+        source "${bashrc_file}"
+    else
+        echo "Warning: Failed to find '${bashrc_file}'"
+        return 1
+    fi
+}
+
+for bashrc in "${HOME_BASHRC_FILES[@]}"; do
+    src_bash "${HOME}/${bashrc}"
+done

@@ -1,19 +1,6 @@
 # BashRC round 2
 # Campbell Glass
 
-if [ -f ~/.utils ]; then
-    source ~/.utils
-else
-    echo "WARNING: MISSING ~/.utils FILE"
-    return 1
-fi
-
-scp_echo 'Running .bashrc'
-# Only run in interactive mode
-if [[ -t 0 ]] && [[ -t 1 ]] && [[ -t 2 ]]; then
-    scp_echo 'fix this'
-fi
-
 ### GENERAL SETTINGS ###
 # Default Editor
 export EDITOR='vim'
@@ -41,7 +28,15 @@ refresh_git () {
 
 refresh_git
 
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# Append to the history file, don't overwrite it
+shopt -s histappend
+
 # History Size
+# See HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=5000
 HISTFILESIZE=10000
 
