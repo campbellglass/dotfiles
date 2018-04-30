@@ -14,19 +14,9 @@ if [[ ":${PATH}:" != *":${CUSTOM_BIN_PATH}:"* ]]; then
     export PATH=${PATH}:${CUSTOM_BIN_PATH}
 fi
 
-# Git autocomplete support
+# TODO: Add git autocomplete support
 # File from
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
-
-refresh_git () {
-    if [ -f ~/git-completion.bash ]; then
-        source ~/git-completion.bash
-    else
-        echo "Missing expected git-completion.bash file"
-    fi
-}
-
-refresh_git
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
