@@ -85,7 +85,6 @@ set splitright
 "* Colors
 syntax enable
 set background=dark
-colorscheme solarized
 highlight Normal ctermbg=None
 
 
