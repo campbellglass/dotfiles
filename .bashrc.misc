@@ -114,6 +114,6 @@ louder () {
     amixer -q sset Master ${1}%+
 }
 # Decrease volume by $1%
-quieterx () {
+quieter () {
     amixer -q sset Master ${1}%-
 }
