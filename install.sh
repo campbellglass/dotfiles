@@ -24,5 +24,12 @@ fi
 echo "Linking .tmux.conf"
 ln -fns "${DOTFILES_PATH}/.tmux.conf" "${HOME}/.tmux.conf"
 
+# link bash_profile to bashrc for tmux loading
+# TODO: Make this work if .bash_profile is already present
+# Currently, it breaks if .bash_profile is already present
+if [ ! -f ${HOME}/.bash_profile ]; then
+    ln -fns "${DOTFILES_PATH}/.bashrc.master" "${HOME}/.bash_profile"
+fi
+
 # tmux custom scripts stuff
 # "${DOTFILES_PATH}/bin/tmux/install.sh"
