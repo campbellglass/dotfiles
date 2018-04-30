@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASHRC_LOCAL=".bashrc.local"
-BASHRC_MISC="$.bashrc.misc"
+BASHRC_MISC=".bashrc.misc"
 BASHRC_DEFAULT=".bashrc.default"
 
 HOME_BASHRC_FILES=( "${BASHRC_MISC}" "${BASHRC_LOCAL}" "${BASHRC_DEFAULT}")
