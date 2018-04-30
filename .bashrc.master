@@ -9,7 +9,7 @@ HOME_BASHRC_FILES=( "${BASHRC_MISC}" "${BASHRC_LOCAL}" "${BASHRC_DEFAULT}")
 
 src_bash () {
     if [ "$#" -ne 1 ]; then
-        echo "Error: Usage $0 <BASHRC_FILENAME>"
+        echo "Error: Usage $0 <BASHRC_FILENAME>" 1>&2
 	return 1
     fi
 
@@ -17,10 +17,10 @@ src_bash () {
 
     echo "Looking for '${bashrc_file}'"
     if [ -f "${bashrc_file}" ]; then
-        echo "Found '${bashrc_file}'"
+        echo "Found '${bashrc_file}'" 1>&2
         source "${bashrc_file}"
     else
-        echo "Warning: Failed to find '${bashrc_file}'"
+        echo "Warning: Failed to find '${bashrc_file}'" 1>&2
         return 1
     fi
 }
