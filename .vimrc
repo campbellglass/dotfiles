@@ -83,6 +83,9 @@ let g:mapleader = ","
 set splitbelow
 set splitright
 
+"* Automatically resize splits on window resize
+autocmd VimResized * wincmd =
+
 "* Colors
 syntax enable
 set background=dark
