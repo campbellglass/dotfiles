@@ -35,6 +35,11 @@ HISTFILESIZE=10000
 alias ls='ls --color=auto'
 alias la='ls -a --color=auto'
 
+# Window manager settings
+# see https://goo.gl/1T9tQA for reference
+gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
+gsettings set org.gnome.desktop.wm.preferences raise-on-click true
+
 # renames terminal window. Useful for tmux/i3
 renameterminal () {
   echo -e "\e]0;$1\a"
