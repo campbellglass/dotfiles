@@ -12,14 +12,6 @@ endif
 " Plug Setup
 call plug#begin('~/.vim/plugged')
 
-" Go support in vim
-Plug 'fatih/vim-go'
-au FileType go nmap <Leader>gd <Plug>(go-def-vertical)
-
-let g:go_metalinter_autosave = 1
-let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'varcheck', 'ineffassign']
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'varcheck', 'aligncheck', 'ineffassign']
-
 " Ctrl-p Fuzzy File Matching
 " Mostly cut/paste from github.com/tgrosinger/dotfiles
 Plug 'ctrlpvim/ctrlp.vim'
