@@ -13,12 +13,8 @@ ln -fns "${DOTFILES_PATH}/.bashrc.misc" "${HOME}/.bashrc.misc"
 # .vimrc stuff
 echo "Linking .vimrc"
 ln -fns "${DOTFILES_PATH}/.vimrc" "${HOME}/.vimrc"
-if [ ! -d "${HOME}/.vim" ]; then
-    mkdir "${HOME}/.vim"
-fi
-if [ ! -d "${HOME}/.vim/swapfiles" ]; then
-    mkdir "${HOME}/.vim/swapfiles"
-fi
+echo "Linking .bashrc.vim"
+ln -fns "${DOTFILES_PATH}/.bashrc.vim" "${HOME}/.bashrc.vim"
 
 # .tmux.conf stuff
 echo "Linking .tmux.conf"

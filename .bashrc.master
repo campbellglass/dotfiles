@@ -4,6 +4,7 @@
 BASHRC_DEFAULT=".bashrc.default"
 BASHRC_LOCAL=".bashrc.local"
 BASHRC_MISC=".bashrc.misc"
+BASHRC_VIM=".bashrc.vim"
 BASHRC_WORK=".bashrc.work"
 
 # bashrc dependency/loading order
@@ -11,6 +12,7 @@ HOME_BASHRC_FILES[0]="${BASHRC_WORK}"
 HOME_BASHRC_FILES[1]="${BASHRC_MISC}"
 HOME_BASHRC_FILES[2]="${BASHRC_LOCAL}"
 HOME_BASHRC_FILES[3]="${BASHRC_DEFAULT}"
+HOME_BASHRC_FILES[4]="${BASHRC_VIM}"
 
 NOCOLOR="\033[0m"
 GREEN="\033[0;32m"
