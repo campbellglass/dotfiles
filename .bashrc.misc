@@ -71,10 +71,6 @@ alias rebashprofile='source ~/.bash_profile'
 alias bashrc='vim ~/.bashrc'
 alias rebashrc='source ~/.bashrc'
 
-# .vimrc family
-alias vimrc='vim ~/.vimrc'
-#alias revimrc='not sure how to do this actually'
-
 # .tmux.conf family
 alias muxconf='vim ~/.tmux.conf'
 alias remuxconf='tmux source-file ~/.tmux.conf'
