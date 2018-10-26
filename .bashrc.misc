@@ -76,7 +76,6 @@ alias muxconf='vim ~/.tmux.conf'
 alias remuxconf='tmux source-file ~/.tmux.conf'
 
 # Screenshot utilities and setup
-export DISPLAY=:0.0
 snap () {
     gnome-screenshot -w -d 1 -f /home/ctmg/Pictures/$1.png
 }
