@@ -1,0 +1,1 @@
+alias newbuntu="sudo docker run -it ubuntu bash"

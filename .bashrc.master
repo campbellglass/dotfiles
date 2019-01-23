@@ -2,6 +2,7 @@
 
 # bashrc filenames, alphabetized
 BASHRC_DEFAULT=".bashrc.default"
+BASHRC_DOCKER=".bashrc.docker"
 BASHRC_LOCAL=".bashrc.local"
 BASHRC_MISC=".bashrc.misc"
 BASHRC_VIM=".bashrc.vim"
@@ -13,6 +14,7 @@ HOME_BASHRC_FILES[1]="${BASHRC_MISC}"
 HOME_BASHRC_FILES[2]="${BASHRC_LOCAL}"
 HOME_BASHRC_FILES[3]="${BASHRC_DEFAULT}"
 HOME_BASHRC_FILES[4]="${BASHRC_VIM}"
+HOME_BASHRC_FILES[5]="${BASHRC_DOCKER}"
 
 NOCOLOR="\033[0m"
 GREEN="\033[0;32m"

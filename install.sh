@@ -9,6 +9,8 @@ echo "Linking .bashrc"
 ln -fns "${DOTFILES_PATH}/.bashrc.master" "${HOME}/.bashrc"
 echo "Linking .bashrc.misc"
 ln -fns "${DOTFILES_PATH}/.bashrc.misc" "${HOME}/.bashrc.misc"
+echo "Linking .bashrc.docker"
+ln -fns "${DOTFILES_PATH}/.bashrc.docker" "${HOME}/.bashrc.docker"
 
 # .vimrc stuff
 echo "Linking .vimrc"
