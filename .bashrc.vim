@@ -15,4 +15,9 @@ vimmakeswap () { # Makes vim swapfile dir if not present
         mkdir --parents "${SWAPFILES}"
     fi
 }
+vimrefreshswap () { # Clears and remakes vim swapfile dir
+    vimclearswap
+    vimmakeswap
+}
+
 vimmakeswap
