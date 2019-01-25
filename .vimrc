@@ -12,6 +12,15 @@ endif
 " Plug Setup
 call plug#begin('~/.vim/plugged')
 
+" Run Python Black on save
+Plug 'ambv/black'
+
+Plug 'vim-python/python-syntax'
+let g:python_highlight_all = 0
+let g:pymode_python = 'python3'
+let g:pymode_lint_on_write = 0
+let b:syntastic_mode = 'passive'
+
 " Ctrl-p Fuzzy File Matching
 " Mostly cut/paste from github.com/tgrosinger/dotfiles
 Plug 'ctrlpvim/ctrlp.vim'
