@@ -11,6 +11,8 @@ echo "Linking .bashrc.misc"
 ln -fns "${DOTFILES_PATH}/.bashrc.misc" "${HOME}/.bashrc.misc"
 echo "Linking .bashrc.docker"
 ln -fns "${DOTFILES_PATH}/.bashrc.docker" "${HOME}/.bashrc.docker"
+echo "Linking .bashrc.tmux"
+ln -fns "${DOTFILES_PATH}/.bashrc.tmux" "${HOME}/.bashrc.tmux"
 
 # .vimrc stuff
 echo "Linking .vimrc"
@@ -28,6 +30,3 @@ ln -fns "${DOTFILES_PATH}/.tmux.conf" "${HOME}/.tmux.conf"
 if [ ! -f ${HOME}/.bash_profile ]; then
     ln -fns "${DOTFILES_PATH}/.bashrc.master" "${HOME}/.bash_profile"
 fi
-
-# tmux custom scripts stuff
-# "${DOTFILES_PATH}/bin/tmux/install.sh"
