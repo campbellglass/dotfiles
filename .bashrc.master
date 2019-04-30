@@ -3,6 +3,7 @@
 # bashrc filenames, alphabetized
 BASHRC_DEFAULT=".bashrc.default"
 BASHRC_DOCKER=".bashrc.docker"
+BASHRC_GIT=".bashrc.git"
 BASHRC_LOCAL=".bashrc.local"
 BASHRC_MISC=".bashrc.misc"
 BASHRC_TMUX=".bashrc.tmux"
@@ -17,6 +18,7 @@ HOME_BASHRC_FILES[3]="${BASHRC_DEFAULT}"
 HOME_BASHRC_FILES[4]="${BASHRC_VIM}"
 HOME_BASHRC_FILES[5]="${BASHRC_DOCKER}"
 HOME_BASHRC_FILES[6]="${BASHRC_TMUX}"
+HOME_BASHRC_FILES[7]="${BASHRC_GIT}"
 
 NOCOLOR="\033[0m"
 GREEN="\033[0;32m"
